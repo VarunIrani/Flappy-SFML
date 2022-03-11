@@ -8,6 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		D349ACAC241B8CF600E5A30C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D349ACAB241B8CF600E5A30C /* main.cpp */; };
+		D349ACB8241B8DB600E5A30C /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D349ACB3241B8DB600E5A30C /* libsfml-window.2.5.1.dylib */; };
+		D349ACB9241B8DB600E5A30C /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D349ACB4241B8DB600E5A30C /* libsfml-graphics.2.5.1.dylib */; };
+		D349ACBA241B8DB600E5A30C /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D349ACB5241B8DB600E5A30C /* libsfml-audio.2.5.1.dylib */; };
+		D349ACBB241B8DB600E5A30C /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D349ACB6241B8DB600E5A30C /* libsfml-system.2.5.1.dylib */; };
+		D349ACBC241B8DB600E5A30C /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D349ACB7241B8DB600E5A30C /* libsfml-network.2.5.1.dylib */; };
+		D349ACC4241B909A00E5A30C /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D349ACBF241B909A00E5A30C /* AssetManager.cpp */; };
+		D349ACC5241B909A00E5A30C /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D349ACC0241B909A00E5A30C /* InputManager.cpp */; };
+		D349ACC6241B909A00E5A30C /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D349ACC1241B909A00E5A30C /* StateMachine.cpp */; };
+		D349ACC9241B91BB00E5A30C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D349ACC8241B91BB00E5A30C /* Game.cpp */; };
+		D349ACD1241B956A00E5A30C /* Resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = D349ACCC241B951E00E5A30C /* Resources */; };
+		D360D33D241F5934002A4DFE /* Collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D360D33B241F5934002A4DFE /* Collision.cpp */; };
+		D360D340241F86A2002A4DFE /* Flash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D360D33E241F86A2002A4DFE /* Flash.cpp */; };
+		D36EB34724260F08000BFA5A /* HUD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D36EB34524260F08000BFA5A /* HUD.cpp */; };
+		D3F7CDCB241CDA27009DF99B /* MainMenuState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3F7CDC9241CDA27009DF99B /* MainMenuState.cpp */; };
+		D3F7CDCE241CDE03009DF99B /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3F7CDCC241CDE03009DF99B /* GameState.cpp */; };
+		D3F7CDD1241CDF67009DF99B /* GameOverState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3F7CDCF241CDF67009DF99B /* GameOverState.cpp */; };
+		D3F7CDD4241CE083009DF99B /* Pipe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3F7CDD2241CE083009DF99B /* Pipe.cpp */; };
+		D3F7CDD7241CE774009DF99B /* Land.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3F7CDD5241CE774009DF99B /* Land.cpp */; };
+		D3F7CDDA241CF008009DF99B /* Bird.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3F7CDD8241CF008009DF99B /* Bird.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,11 +39,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		D349ACD0241B956300E5A30C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				D349ACD1241B956A00E5A30C /* Resources in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D349ACA8241B8CF600E5A30C /* Flappy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Flappy; sourceTree = BUILT_PRODUCTS_DIR; };
 		D349ACAB241B8CF600E5A30C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D349ACB3241B8DB600E5A30C /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
+		D349ACB4241B8DB600E5A30C /* libsfml-graphics.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-graphics.2.5.1.dylib"; sourceTree = "<group>"; };
+		D349ACB5241B8DB600E5A30C /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
+		D349ACB6241B8DB600E5A30C /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
+		D349ACB7241B8DB600E5A30C /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../External Libraries/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
+		D349ACBD241B909900E5A30C /* StateMachine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StateMachine.hpp; sourceTree = "<group>"; };
+		D349ACBE241B909900E5A30C /* AssetManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AssetManager.hpp; sourceTree = "<group>"; };
+		D349ACBF241B909A00E5A30C /* AssetManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
+		D349ACC0241B909A00E5A30C /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		D349ACC1241B909A00E5A30C /* StateMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateMachine.cpp; sourceTree = "<group>"; };
+		D349ACC2241B909A00E5A30C /* InputManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = InputManager.hpp; sourceTree = "<group>"; };
+		D349ACC3241B909A00E5A30C /* State.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = State.hpp; sourceTree = "<group>"; };
+		D349ACC7241B91BB00E5A30C /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		D349ACC8241B91BB00E5A30C /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		D349ACCA241B925600E5A30C /* DEFINITIONS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DEFINITIONS.hpp; sourceTree = "<group>"; };
+		D349ACCC241B951E00E5A30C /* Resources */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Resources; sourceTree = SOURCE_ROOT; };
+		D360D33B241F5934002A4DFE /* Collision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Collision.cpp; sourceTree = "<group>"; };
+		D360D33C241F5934002A4DFE /* Collision.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Collision.hpp; sourceTree = "<group>"; };
+		D360D33E241F86A2002A4DFE /* Flash.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Flash.cpp; sourceTree = "<group>"; };
+		D360D33F241F86A2002A4DFE /* Flash.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Flash.hpp; sourceTree = "<group>"; };
+		D36EB34524260F08000BFA5A /* HUD.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUD.cpp; sourceTree = "<group>"; };
+		D36EB34624260F08000BFA5A /* HUD.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUD.hpp; sourceTree = "<group>"; };
+		D3F7CDC9241CDA27009DF99B /* MainMenuState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuState.cpp; sourceTree = "<group>"; };
+		D3F7CDCA241CDA27009DF99B /* MainMenuState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MainMenuState.hpp; sourceTree = "<group>"; };
+		D3F7CDCC241CDE03009DF99B /* GameState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
+		D3F7CDCD241CDE03009DF99B /* GameState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameState.hpp; sourceTree = "<group>"; };
+		D3F7CDCF241CDF67009DF99B /* GameOverState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameOverState.cpp; sourceTree = "<group>"; };
+		D3F7CDD0241CDF67009DF99B /* GameOverState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameOverState.hpp; sourceTree = "<group>"; };
+		D3F7CDD2241CE083009DF99B /* Pipe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pipe.cpp; sourceTree = "<group>"; };
+		D3F7CDD3241CE083009DF99B /* Pipe.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Pipe.hpp; sourceTree = "<group>"; };
+		D3F7CDD5241CE774009DF99B /* Land.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Land.cpp; sourceTree = "<group>"; };
+		D3F7CDD6241CE774009DF99B /* Land.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Land.hpp; sourceTree = "<group>"; };
+		D3F7CDD8241CF008009DF99B /* Bird.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bird.cpp; sourceTree = "<group>"; };
+		D3F7CDD9241CF008009DF99B /* Bird.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bird.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +95,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D349ACB8241B8DB600E5A30C /* libsfml-window.2.5.1.dylib in Frameworks */,
+				D349ACB9241B8DB600E5A30C /* libsfml-graphics.2.5.1.dylib in Frameworks */,
+				D349ACBA241B8DB600E5A30C /* libsfml-audio.2.5.1.dylib in Frameworks */,
+				D349ACBB241B8DB600E5A30C /* libsfml-system.2.5.1.dylib in Frameworks */,
+				D349ACBC241B8DB600E5A30C /* libsfml-network.2.5.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +111,7 @@
 			children = (
 				D349ACAA241B8CF600E5A30C /* Flappy */,
 				D349ACA9241B8CF600E5A30C /* Products */,
+				D349ACB2241B8DB600E5A30C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +126,50 @@
 		D349ACAA241B8CF600E5A30C /* Flappy */ = {
 			isa = PBXGroup;
 			children = (
+				D349ACCC241B951E00E5A30C /* Resources */,
+				D349ACCA241B925600E5A30C /* DEFINITIONS.hpp */,
+				D349ACC8241B91BB00E5A30C /* Game.cpp */,
+				D349ACC7241B91BB00E5A30C /* Game.hpp */,
+				D349ACBF241B909A00E5A30C /* AssetManager.cpp */,
+				D349ACBE241B909900E5A30C /* AssetManager.hpp */,
+				D349ACC0241B909A00E5A30C /* InputManager.cpp */,
+				D349ACC2241B909A00E5A30C /* InputManager.hpp */,
+				D349ACC3241B909A00E5A30C /* State.hpp */,
+				D349ACC1241B909A00E5A30C /* StateMachine.cpp */,
+				D349ACBD241B909900E5A30C /* StateMachine.hpp */,
 				D349ACAB241B8CF600E5A30C /* main.cpp */,
+				D3F7CDC9241CDA27009DF99B /* MainMenuState.cpp */,
+				D3F7CDCA241CDA27009DF99B /* MainMenuState.hpp */,
+				D3F7CDCC241CDE03009DF99B /* GameState.cpp */,
+				D3F7CDCD241CDE03009DF99B /* GameState.hpp */,
+				D3F7CDCF241CDF67009DF99B /* GameOverState.cpp */,
+				D3F7CDD0241CDF67009DF99B /* GameOverState.hpp */,
+				D3F7CDD2241CE083009DF99B /* Pipe.cpp */,
+				D3F7CDD3241CE083009DF99B /* Pipe.hpp */,
+				D3F7CDD5241CE774009DF99B /* Land.cpp */,
+				D3F7CDD6241CE774009DF99B /* Land.hpp */,
+				D3F7CDD8241CF008009DF99B /* Bird.cpp */,
+				D3F7CDD9241CF008009DF99B /* Bird.hpp */,
+				D360D33B241F5934002A4DFE /* Collision.cpp */,
+				D360D33C241F5934002A4DFE /* Collision.hpp */,
+				D360D33E241F86A2002A4DFE /* Flash.cpp */,
+				D360D33F241F86A2002A4DFE /* Flash.hpp */,
+				D36EB34524260F08000BFA5A /* HUD.cpp */,
+				D36EB34624260F08000BFA5A /* HUD.hpp */,
 			);
 			path = Flappy;
+			sourceTree = "<group>";
+		};
+		D349ACB2241B8DB600E5A30C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D349ACB5241B8DB600E5A30C /* libsfml-audio.2.5.1.dylib */,
+				D349ACB4241B8DB600E5A30C /* libsfml-graphics.2.5.1.dylib */,
+				D349ACB7241B8DB600E5A30C /* libsfml-network.2.5.1.dylib */,
+				D349ACB6241B8DB600E5A30C /* libsfml-system.2.5.1.dylib */,
+				D349ACB3241B8DB600E5A30C /* libsfml-window.2.5.1.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +182,7 @@
 				D349ACA4241B8CF600E5A30C /* Sources */,
 				D349ACA5241B8CF600E5A30C /* Frameworks */,
 				D349ACA6241B8CF600E5A30C /* CopyFiles */,
+				D349ACD0241B956300E5A30C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -88,7 +199,7 @@
 		D349ACA0241B8CF600E5A30C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Varun Irani";
 				TargetAttributes = {
 					D349ACA7241B8CF600E5A30C = {
@@ -119,7 +230,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F7CDCB241CDA27009DF99B /* MainMenuState.cpp in Sources */,
+				D3F7CDCE241CDE03009DF99B /* GameState.cpp in Sources */,
+				D3F7CDD7241CE774009DF99B /* Land.cpp in Sources */,
+				D36EB34724260F08000BFA5A /* HUD.cpp in Sources */,
+				D349ACC4241B909A00E5A30C /* AssetManager.cpp in Sources */,
 				D349ACAC241B8CF600E5A30C /* main.cpp in Sources */,
+				D3F7CDD1241CDF67009DF99B /* GameOverState.cpp in Sources */,
+				D3F7CDDA241CF008009DF99B /* Bird.cpp in Sources */,
+				D349ACC5241B909A00E5A30C /* InputManager.cpp in Sources */,
+				D349ACC6241B909A00E5A30C /* StateMachine.cpp in Sources */,
+				D349ACC9241B91BB00E5A30C /* Game.cpp in Sources */,
+				D360D33D241F5934002A4DFE /* Collision.cpp in Sources */,
+				D360D340241F86A2002A4DFE /* Flash.cpp in Sources */,
+				D3F7CDD4241CE083009DF99B /* Pipe.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +276,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -210,6 +335,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -238,7 +364,10 @@
 		D349ACB0241B8CF600E5A30C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}/../External Libraries/SFML/include\"";
+				LIBRARY_SEARCH_PATHS = "\"${SRCROOT}/../External Libraries/SFML/lib\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -246,7 +375,10 @@
 		D349ACB1241B8CF600E5A30C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}/../External Libraries/SFML/include\"";
+				LIBRARY_SEARCH_PATHS = "\"${SRCROOT}/../External Libraries/SFML/lib\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
